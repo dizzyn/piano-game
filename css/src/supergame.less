@@ -1,0 +1,41 @@
+.plan {
+    margin: 0 auto;
+    padding-top: 200px;
+    .column {
+        width: 20px;
+        height: 120px;
+        float: left;
+        background: gray;
+        margin: 0 1px 0 0;
+        overflow: hidden;
+        position: relative;
+        .item {
+            height: 10px;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            background: black;
+            color: white;
+        }
+    }
+
+    .track {
+        height: 20px;
+        width: 100%;
+        background: gray;
+        float: left;
+        margin-top: 1px;
+        position: relative;
+        clear: both;
+
+        .spaceship {
+            background: black;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}

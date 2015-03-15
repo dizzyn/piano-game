@@ -1,0 +1,11 @@
+<%= controler.include("_head", {app: "tuner"}) %> 
+
+<%= controler.include("_header") %>
+ 
+<script type="text/template" id="tuner-template">
+<%= controler.include("_template-tuner") %>
+</script>
+
+<div id="app-container"></div>
+
+<%= controler.include("_footer") %>

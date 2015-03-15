@@ -1,0 +1,23 @@
+<button onclick="toggleLiveInput()">Launch Tunner</button>
+
+<div class="tone-template">
+    <span class="l m-4"></span>
+    <span class="l m-3"></span>
+    <span class="l m-2"></span>
+    <span class="l m-1"></span>
+    <span class="l c"></span>
+    <span class="letter"></span>
+    <span class="l p-1"></span>
+    <span class="l p-2"></span>
+    <span class="l p-3"></span>
+    <span class="l p-4"></span>
+    <span class="l p-5"></span>
+</div>
+
+<div class="tuner">
+    <div class="holder">
+        <div class="slider">
+
+        </div>
+    </div>
+</div>

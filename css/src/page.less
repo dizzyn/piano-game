@@ -1,0 +1,216 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    .titles {
+        float: left;
+        h4, h1 a {
+            float: left;
+            color: white;
+            padding: 0px 20px;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h4 {
+            line-height: 1;
+            margin: 8px 1px;
+            clear: both;
+        }
+    }
+
+    .menu {
+        float: right;
+        padding-right: 20px;
+        li {
+            display: block;
+            float: left;
+            a, .label {
+                display: block;
+                padding: 20px 5px;
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        li.active {
+            a {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.btn {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+.main {
+    margin: 0 auto;
+    padding-top: 130px;
+
+    .instructions {
+        padding-top: 5px;
+
+        h3 {
+            text-align: center;
+        }
+        h4 {
+            padding-top: 0px;
+            text-align: center;
+            font-weight: normal;
+        }
+    }
+
+    .top-bar {
+        .clearfix();
+        height: 70px;
+
+        .btn-start {
+            float: left;
+        }
+        .score {
+            float: right;
+            color: white;
+            margin-top: 5px;
+            position: relative;
+            background: black;
+            transition: background-color .2s;
+            .label {
+                font-size: 18px;
+                text-align: center;
+                font-weight: normal;
+                padding: 0;
+                margin: 0; 
+            }
+            .number {
+                font-size: 32px;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                line-height: 1;
+            }
+            &.increased {
+                background: rgba(255, 255, 255, .4);
+            }
+        }
+    }
+}
+
+.instrument-wrapper {
+    position: relative;
+
+    .popup {
+        display: none;
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(77, 77, 77, .9);
+        border: 1px solid black;
+
+        .btn-close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+
+            text-indent: 1000px;
+            overflow: hidden;
+
+            background-image: url('data:image/png;base64,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');
+            background-size: 50px;
+
+            &:hover {
+                background-color: white;
+            }
+        }
+
+        .message {
+            margin-top: 50px;
+            .game-over {
+                font-size: 43px;
+                text-align: center;
+            }
+            .congratz {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        .share {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .actions {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 15px;
+            .clearfix();
+            .btn {
+                float: right;
+            }
+        }
+    }
+}
+
+.share-game {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    margin: 10px 20px;
+}
+
+
+.ingame {
+    display: none;
+}
+.outgame {
+    display: block;
+}
+
+#app-container.switch-ingame {
+    .ingame {
+        display: block;
+    }
+    .outgame {
+        display: none;
+    }
+}
+
+.winner {
+    display: none;
+}
+.not-winner {
+    display: block;
+}
+
+#app-container.switch-winner {
+    .winner {
+        display: block;
+    }
+    .not-winner {
+        display: none;
+    }
+}

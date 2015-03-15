@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">  
+<head>
+    <meta charset="utf-8">
+    <title>Piano @ Instrument Hero</title>
+    <meta name="description" content="Game that helps you to improve music skills">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <meta property="fb:app_id" content="758523907563637"/>
+    <meta property="og:type" content="website" />
+
+    <meta property="og:url" content="http://instrumenthero.com/" />
+    <meta property="og:image" content="http://instrumenthero.com/img/favi/logo.png" />
+    <meta property="og:title" content="Piano at Instrument Hero" />
+    <meta property="og:description" content="Game that helps you to improve music skills." />
+
+    <link rel="shortcut icon" href="img/favi/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/favi/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favi/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favi/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favi/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favi/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favi/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favi/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favi/apple-touch-icon-152x152.png" /> 
+
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+ 
+    <meta name = 'viewport' content = 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link rel='stylesheet' type='text/css' href='css/app.css'/>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/howler.js" type="text/javascript"></script>
+</head>

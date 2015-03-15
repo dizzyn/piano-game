@@ -1,0 +1,29 @@
+<ul class='keys'>
+</ul>
+
+<div class="popup progress-bar-popup">
+
+    <div class="progress-bar">
+        <div class="label">
+            One moment please
+        </div>
+        <div class="bits">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+
+<div class="popup ios-popup">
+    <button class="btn btn-ios-load">Load the piano</button>
+</div>

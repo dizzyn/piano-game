@@ -1,0 +1,14 @@
+    <div class="header">
+        <div class="titles">
+            <h1><a href="http://instrumenthero.com">Instrument Hero</a></h1>
+            <h4>24 tones challenge</h4>
+        </div>
+
+        <!-- ul class="menu">
+            <li><span class="label">Training mode:</span></li>
+            <li class="memory active"><a href="#">Memory</a></li>
+            <li class="keyboard"><a href="#keyboard">Keyboard</a></li>
+            <li class="perfect-pitch"><a href="#perfect-pitch">Perfect pitch</a></li>
+        </ul -->
+    </div> 
+

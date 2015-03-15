@@ -1,0 +1,45 @@
+/* tuner */
+
+.tuner {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 200px;
+
+    .letter {
+        text-align: center;
+        font-size: 140px;
+        color: #aaa;
+    }
+
+    .cents {
+        
+    }
+    
+    .scale {
+        .x {
+            border: 1px solid #aaa;
+            width: 5px;
+            height: 20px;
+            float: left;
+            margin-right: 10px;
+            &.it {
+                background: #aaa;
+            }
+        }
+    }
+
+    &.accurate {
+        .letter {
+            color: fff;
+        }
+        .scale {
+            border-color: #fff;
+            .x {
+                &.it {
+                    background: #fff;
+                }
+            }
+        }
+    }
+}

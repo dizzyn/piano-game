@@ -1,0 +1,30 @@
+{
+  "name": "piano",
+  "version": "0.0.0",
+  "license": "GNU-GPL",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Randus <tom.randus@gmail.com>",
+  "devDependencies": {
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.0",
+    "karma-firefox-launcher": "~0.1.0",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-jasmine": "~0.1.3",
+    "karma-requirejs": "~0.2.0",
+    "karma-coffee-preprocessor": "~0.2.0",
+    "karma-phantomjs-launcher": "~0.1.0",
+    "karma": ">=0.10.4",
+    "karma-ng-scenario": "~0.1.0"
+  },
+  "dependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-less": "^0.12.0",
+    "underscore": "^1.7.0"
+  }
+}

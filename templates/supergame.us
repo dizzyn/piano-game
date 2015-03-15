@@ -1,0 +1,11 @@
+<%= controler.include("_head", {app: "supergame"}) %>
+
+<%= controler.include("_header") %>
+
+<script type="text/template" id="supergame-template">
+<%= controler.include("_template-supergame") %>
+</script>
+
+<div id="app-container"></div>
+
+<%= controler.include("_footer") %>

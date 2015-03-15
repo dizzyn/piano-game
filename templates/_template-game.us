@@ -1,0 +1,73 @@
+<br/>
+<br/>
+
+<div class="main">
+
+    <div class="top-bar">
+        <div class="score ingame">
+            <div class="label">Tones</div>
+            <div class="number val-level"></div>
+        </div>
+        <!-- div class="hi-score">
+            <div class="label">Hi-score</div>
+            <div class="number val-level"></div>
+        </div -->
+        <button class="btn btn-start">
+            <span class="outgame">Accept the challenge</span>
+            <span class="ingame">Restart</span>
+        </button>
+    </div>
+
+    <div class="instrument-wrapper">
+        <div id="instrument">
+
+        </div>
+        <div class="popup not-compatible">
+            Not compatible
+        </div>
+        <div class="popup game-over-popup">
+            <div class="btm btn-close" ng-click="closeGameOverPopup()">x</div>
+
+            <div class="message">
+                <div class="game-over">Game Over</div>
+                <div class="msg msg-lev-0">
+                    <div class="congratz">It was a wrong key.</div>
+                </div>
+                <div class="msg msg-lev-1">
+                    <div class="congratz">Your score is <span class="val-level"></span> tone</div>
+                </div>
+                <div class="msg msg-lev-more">
+                    <div class="congratz">Your score is <span class="val-level"></span> tones</div>
+                </div>
+            </div>
+
+            <div class="share share-score" id="share-score">
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-start" ng-click="startGame()">Try again</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="not-winner">
+        <div class="instructions ingame">
+            <h3>Train your memory</h3>
+            <h4>Remember the keys and play them in correct order</h4>
+        </div>
+        <div class="instructions outgame">
+            <h3>Accept the challenge</h3>
+            <h4>Prove that you can remember 24 tones</h4>
+        </div>
+    </div>
+    <div class="winner">
+        <div class="instructions ingame">
+            <h3>You are the winner</h3>
+            <h4>Challenge passed !!!</h4>
+        </div>
+    </div>
+</div>
+
+<br/>
+<br/>
+ 

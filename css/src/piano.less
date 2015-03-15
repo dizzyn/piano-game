@@ -1,0 +1,103 @@
+/* app css stylesheet */
+
+.piano {
+    margin: 20px auto;
+    background: black;
+    .clearfix();
+    padding: 10px;
+    position: relative;
+    height: 230px;
+//    transition: opacity .4s;
+
+    .key {
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        cursor: pointer;
+//        transition: background-color .2s;
+        &.white {
+            background: white;
+            border-radius: 0 0 5px 5px;
+            &.not-loaded {
+//                  background: #222;
+            }
+        }
+        &.black {
+            background: black;
+            height: 50%;
+            z-index: 1;
+            border-radius: 0 0 5px 5px;
+            &.not-loaded {
+                background: #222;
+            }
+        }
+        &.white, &.black {
+            &:hover {
+                //                background: red;
+            }
+            &.active {
+                background: red;
+            }
+        }
+    }
+    
+    .ios-popup {
+        background: black;
+        .btn-ios-load {
+            display: block; 
+            margin: 0 auto;
+        }
+    }
+
+    &.not-loaded-piano {
+        .progress-bar-popup {
+            display: block;
+            background: black;
+            .progress-bar {
+                .label {
+                    text-align: center;
+                }
+                .bits {
+                    
+                }
+            }
+        }
+        .key {
+            //transition: background-color 2s;
+        }
+    }
+
+    .progress-bar {
+        width: 80%;
+        height: 20px;
+        margin: 80px auto;
+        .label {
+            margin: 5px;
+            font-size: 20px;
+            color: rgba(255, 255, 255, .4);
+        }
+        span {
+//            background-color: blue;
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            height: 100%;
+            width: (100% / 12);
+            &.active {
+                background: rgba(255, 255, 255, .4);
+            }
+        }
+    }
+}
+
+&.in-game {
+    &.turn-me {
+        .piano {
+            opacity: .7;
+            .key {
+                cursor: initial;
+            }
+        }
+    }
+}

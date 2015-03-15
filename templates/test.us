@@ -1,0 +1,163 @@
+<%= controler.include("_head-no-backbone") %>
+<body>
+<style>
+    body {
+        color: white;
+    }
+
+    table {
+        border: 1px solid white;
+    }
+
+    td {
+        border: 1px solid white;
+        text-align: center;
+        padding: 5px 15px;
+    }
+
+</style>
+<div style="max-width: 600px;margin: 30px auto;padding: 10px;">
+
+<table>
+<tr>
+<td>audio/ogg; codecs=vorbis</td>
+<td>audio/ogg</td>
+<td>mp3</td>
+<td>wav</td>
+</tr>
+<tr>
+<td>
+<script>
+document.write((new Audio()).canPlayType("audio/ogg; codecs=vorbis"));
+</script>
+</td>
+<td>
+<script>
+document.write((new Audio()).canPlayType("audio/ogg"));
+</script>
+</td>
+<td>
+<script>
+document.write((new Audio()).canPlayType("audio/mp3"));
+</script>
+</td>
+<td>
+<script>
+document.write((new Audio()).canPlayType("audio/wav"));
+</script>
+</td>
+</tr>
+</table>
+
+<h1>Test Case</h1>
+<a href="/">Back</a>
+
+<br/>
+<br/>
+<br/>
+
+<!--           -->
+<!--           -->
+
+<h4>1.) Automatically played "A"</h4>
+<script>
+    $(function() {
+        new Howl({
+            urls: ['tones/piano_a.mp3']
+        }).play();
+    })
+</script>
+
+<!--           -->
+<!--           -->
+
+<h4>2.) Load and play "B" (MP3)</h4>
+<button class="btn btn-play-mp3">Mp3</button>
+<button class="btn btn-play-ogg">ogg</button>
+<button class="btn btn-play-wav">wav</button>
+<button class="btn btn-play-auto">auto</button>
+<script>
+    $(function() {
+        $(".btn-play-mp3").mousedown(function() {
+            new Howl({
+                urls: ['tones/piano_b.mp3']
+            }).play();
+        });
+        $(".btn-play-ogg").mousedown(function() {
+            new Howl({
+                urls: ['tones/piano_b.ogg']
+            }).play();
+        });
+        $(".btn-play-vaw").mousedown(function() {
+            new Howl({
+                urls: ['tones/piano_b.wav']
+            }).play();
+        });
+        $(".btn-play-auto").mousedown(function() {
+            new Howl({
+                urls: [
+                    'tones/piano_b.mp3',
+                    'tones/piano_b.ogg',
+                    'tones/piano_b.wav',
+                ]
+            }).play();
+        });
+    })
+</script>
+
+<!--           -->
+<!--           -->
+
+<h4>3.) Play "C" and save</h4>
+<button class="btn btn-play-and-save-all">all</button>
+<button class="btn btn-play-and-save-mp3">mp3</button>
+<script>
+    var tone_c_all, tone_c_mp3;
+    $(function() {
+        $(".btn-play-and-save-all").mousedown(function() {
+            tone_c_all = tone_c_all || new Howl({
+                urls: ['tones/piano_c.mp3', 'tones/piano_c.wav', 'tones/piano_c.ogg']
+            });
+            tone_c_all.play();
+        });
+        $(".btn-play-and-save-mp3").mousedown(function() {
+            tone_c_mp3 = tone_c_mp3 || new Howl({
+                urls: ['tones/piano_c.mp3']
+            });
+            tone_c_mp3.play();
+        });
+    })
+</script>
+
+<!--           -->
+<!--           -->
+
+<h4>3.) Load "D" and call back</h4>
+<button class="btn btn-play-d">Play</button>
+<script>
+    var tone_d;
+    $(function() {
+        $(".btn-play-d").mousedown(function() {
+            tone_d = new Howl({
+                urls: ['tones/piano_d.mp3'],
+                onload: function() {
+                    if(confirm("Načteno, přehrát?")) {
+                        tone_d.play();
+                    };
+                }
+            })
+        });
+    })
+</script>
+
+<!--           -->
+<!--           -->
+
+
+
+
+
+            </div><!-- page inner -->
+        </div><!-- page -->
+    </body>
+</html>

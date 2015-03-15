@@ -1,0 +1,23 @@
+<button onclick="toggleLiveInput()">Launch Tunner</button>
+
+<div class="tuner">
+    <div class="letter">
+    </div>
+    <div class="cents"> 
+    </div>
+    <div class="scale">
+        <div class="x s50"></div>
+        <div class="x s40"></div>
+        <div class="x s30"></div>
+        <div class="x s20"></div>
+        <div class="x s10"></div>
+
+        <div class="x m0 b0"></div>
+
+        <div class="x b10"></div>
+        <div class="x b20"></div>
+        <div class="x b30"></div>
+        <div class="x b40"></div>
+        <div class="x b50"></div>
+    </div>
+</div>

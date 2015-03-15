@@ -1,0 +1,15 @@
+<%= controler.include("_head", {app: "piano"}) %> 
+
+<%= controler.include("_header") %>
+
+<script type="text/template" id="game-template">
+<%= controler.include("_template-game") %>
+</script>
+
+<script type="text/template" id="piano-template">
+<%= controler.include("_template-piano") %>
+</script>
+
+<div id="app-container"></div>
+
+<%= controler.include("_footer") %>
